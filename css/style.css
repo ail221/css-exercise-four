@@ -1,4 +1,85 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #dadada;
   font-size: 10px;
+  font-family: sans-serif;
 }
+
+.container {
+  margin: 35px auto;
+  width: 100%;
+}
+
+.preview {
+  background-color: #dadada;
+  float: left;
+  margin: 1% 0;
+  width: 100%;
+  padding: 20px 25px;
+  height: 250px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+font-family: arial;
+font-size: 1.5em;
+text-align: center;
+text-transform: uppercase;
+margin-bottom: 5%;
+letter-spacing: 0.063em;
+font-weight: 500;
+}
+
+.preview h1 { /*Cities names*/
+  font-size: 2em;
+  font-family: serif;
+  text-align: left;
+  text-transform: capitalize;
+  padding-top: 5%;
+  padding-left: 4%;
+  letter-spacing: normal;
+  font-weight: 600;
+}
+
+.london {
+ background-image: url("../images/london.png");
+ margin-bottom: 5%;
+}
+
+.baku {
+ background-image:url("../images/baku.jpg");
+ margin-bottom: 5%;
+}
+
+.madrid {
+  background-image: url("../images/madrid.jpg");
+  margin-bottom: 5%;
+}
+
+.rome {
+  background-image: url("../images/rome.jpg");
+  margin-bottom: 5%;
+}
+
+@media screen and (min-width: 575px) {/*a media query to display a two-column design for tablet devices.*/
+  .container {
+   width: 90%;
+ }
+ .preview {
+    margin: 1%;
+    width: 48%;
+  }
+}
+
+@media screen and (min-width: 991px){/* media query to display a four-column design for larger devices, like laptops*/
+  .container {
+   width: 90%;
+ }
+   .preview {
+    margin: .5%;
+    width: 24%;
+  }
